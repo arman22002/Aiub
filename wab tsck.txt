@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+
+<h2>Profile</h2>
+<table border="1" width="100%">
+    <tr>
+        <!-- General Information Section -->
+        <td width="25%">
+            <div><b>General Information</b></div>
+            <table border="0">
+                <tr><td><b>First Name:</b> Mir Md.</td></tr>
+                <tr><td><b>Last Name:</b> Kawsur</td></tr>
+                <tr><td><b>Father's<br> Name:</b> XYZ</td></tr>
+                <tr><td><b>Mother's<br> Name:</b> ZYX</td></tr>
+                <tr><td><b>Date of<br> Birth:</b> 15 June <br>2001</td></tr>
+                <tr><td><b>Blood<br> Group:</b> B+</td></tr>
+                <tr><td><b>Religion:</b> Islam</td></tr>
+                <tr><td><b>Nationality:</b> Bangladeshi</td></tr>
+            </table>
+        </td>
+
+        <!-- Address Information Section -->
+        <td width="25%">
+            <div><b>Address Information</b></div>
+            <table border="0">
+                <tr><td><b>Email:</b> <a href="mailto:kawsur@aiub.edu">kawsur@aiub.edu</a></td></tr>
+                <tr><td><b>Phone:</b> +880-0151XXXXXXX</td></tr>
+                <tr><td><b>Website:</b> <a href="https://kawsur.me">https://kawsur.me</a></td></tr>
+                <tr><td><b>Present Address:</b> 408/1, Kuratoli, Khilkhet, Dhaka 1229, Bangladesh</td></tr>
+                <tr><td><b>Permanent Address:</b> Uttara, Dhaka, Bangladesh</td></tr>
+            </table>
+        </td>
+
+        <!-- Work Experience Section -->
+        <td width="25%">
+            <div><b>Work Experience</b></div>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>ABC Software<br> Ltd.</td>
+                    <td>Web Developer</td>
+                </tr>
+            </table>
+            <ul>
+                <li><b>Developed and maintained client websites</b></li>
+                <li><b>Collaborated with UI/UX team</b></li>
+                <li><b>Implemented responsive design</b></li>
+            </ul>
+
+            <br>
+
+            <table border="1" width="100%">
+                <tr>
+                    <th>Company</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>XYZ Tech</td>
+                    <td>Intern</td>
+                </tr>
+            </table>
+            <ul>
+                <li><b>Worked on API <br>integration</b></li>
+                <li><b>Tested web <br>application</b></li>
+                <li><b>Creted <br>documenation</b></li>
+
+            </ul>
+        </td>
+
+        <!-- References Section -->
+        <td width="25%">
+            <div><b>References</b></div>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+      
+                </tr>
+                <tr>
+                    <td>Dr. John Doe</td>
+                    <td>Professor, AIUB</td>
+                    
+                </tr>
+                 <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:johndoe@aiub.edu">johndoe@aiub.edu</a></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Project Manager, ABC Software</td>
+                </tr>
+                  <tr>
+                    <th>Email</th>
+               <td><a href="mailto:janesmith@abc.com">janesmith@abc.com</a></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
