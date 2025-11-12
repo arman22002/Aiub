@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 32px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 40px 30px 20px 30px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 400px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .note {
+      background-color: #001235;
+      color: #ffffff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      width: 80px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #e20f0f;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 60px;
+      resize: none;
+    }
+
+    /* Checkbox and button aligned left */
+    .bottom-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* bam pase */
+      margin-top: 10px;
+      gap: 8px;
+    }
+
+    .checkbox-label {
+      font-weight: normal;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    button {
+      background-color: #2200e2;
+      color: rgb(255, 253, 253);
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(255, 81, 0);
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+
+  <div class="form-container">
+    <div class="note">Remember to fill in all fields!</div>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <!-- Checkbox above button, both aligned left -->
+      <div class="bottom-section">
+        <label class="checkbox-label">
+          <input type="checkbox" id="subscribe"> Subscribe to newsletter
+        </label>
+
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
