@@ -122,12 +122,15 @@
         <input type="text" id="name">
       </div>
 
+      <!-- Error message for Name -->
+      <p id="nameError" class="error">Username must be at least 2 characters long</p>
+
       <div class="form-group">
         <label for="email">Email:</label>
         <input type="email" id="email">
       </div>
 
-      <!-- Error message -->
+      <!-- Error message for Email -->
       <p id="emailError" class="error">Invalid email address</p>
 
       <div class="form-group">
@@ -145,20 +148,37 @@
     </form>
   </div>
 
-  <!-- Email Validation Script -->
+  <!-- Validation Script -->
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(e) {
-
+      let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
-      let errorText = document.getElementById("emailError");
+      let message = document.getElementById("message").value;
 
-      let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let nameError = document.getElementById("nameError");
+      let emailError = document.getElementById("emailError");
 
-      if (!pattern.test(email)) {
-        errorText.style.display = "block";
-        e.preventDefault();
+      // Regular expression for email validation
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Name validation: minimum 2 characters
+      if (name.length < 2) {
+        nameError.style.display = "block";
+        e.preventDefault(); // Prevent form submission
       } else {
-        errorText.style.display = "none";
+        nameError.style.display = "none";
+      }
+
+      // Email validation
+      if (!emailPattern.test(email)) {
+        emailError.style.display = "block";
+        e.preventDefault(); // Prevent form submission
+      } else {
+        emailError.style.display = "none";
+      }
+
+      // If all fields are valid, show success message
+      if (name.length >= 2 && emailPattern.test(email)) {
         alert("Form submitted successfully!");
       }
     });
